@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://teamforgeadmin:Bp4JqMfzTdr7rWnk@teamforge.597akoi.mongodb.net/?retryWrites=true&w=majority&appName=teamforge",
+    "mongoDB": "teamforge"
+}

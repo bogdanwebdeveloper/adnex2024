@@ -1,0 +1,55 @@
+<script lang="ts">
+    export let data: {
+      posts: Array<{
+        id: string;
+        slug: string;
+        email: string;
+        titlu: string;
+        nume: string;
+        prenume: string;
+        organizatie: string;
+        oras: string;
+        adresa: string;
+        mobil: string;
+        suprafata: string;
+        camere: string;
+        mobilat: string;
+        descriere: string;
+        pret: string;
+        images: string[];
+      }>;
+    };
+  </script>
+  
+  <main>
+    <h1>Posts</h1>
+    {#if data.posts && data.posts.length > 0}
+      <ul>
+        {#each data.posts as post}
+          <li>
+            <h2>{post.titlu}</h2>
+            <p><strong>Email:</strong> {post.email}</p>
+            <p><strong>Nume:</strong> {post.nume} {post.prenume}</p>
+            <p><strong>Organizatie:</strong> {post.organizatie}</p>
+            <p><strong>Oras:</strong> {post.oras}</p>
+            <p><strong>Adresa:</strong> {post.adresa}</p>
+            <p><strong>Mobil:</strong> {post.mobil}</p>
+            <p><strong>Suprafata:</strong> {post.suprafata}</p>
+            <p><strong>Camere:</strong> {post.camere}</p>
+            <p><strong>Mobilat:</strong> {post.mobilat}</p>
+            <p><strong>Descriere:</strong> {post.descriere}</p>
+            <p><strong>Pret:</strong> {post.pret}</p>
+            <p><strong>Images:</strong></p>
+            <ul>
+              {#each post.images as image}
+                <li><img src={image} alt="Post image" /></li>
+              {/each}
+            </ul>
+          </li>
+        {/each}
+      </ul>
+    {:else}
+      <p>No posts available.</p>
+    {/if}
+  </main>
+  

@@ -1,0 +1,59 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://admin:admin@teamforge.597akoi.mongodb.net/teamforge?retryWrites=true&w=majority&appName=teamforge"
+}
+
+model Relation {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  userId String
+  postId String @unique
+}
+model Comment {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  postid String @unique
+  username String @unique
+  userid String @unique
+  comment String
+}
+
+model User {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  email String @unique
+  name  String
+  password String
+  codpentruverificare String @unique
+  verifiedemail Int @default(0)
+}
+
+model Form {
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  slug     String    @unique
+  email String
+  titlu    String
+  nume    String
+  prenume String
+  organizatie String
+  oras String
+  adresa String
+  mobil String
+  suprafata String
+  camere  String
+  mobilat String
+  descriere String
+  pret String
+  images String[]
+}
+
+
+
+// Address is an embedded document
+type Address {
+  street String
+  city   String
+  state  String
+  zip    String
+}
+
