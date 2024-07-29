@@ -79,7 +79,7 @@
         {#each data.posts as post}
           <div class="w-72 bg-white dark:bg-gray-800 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="/userprofile/{post.id}">
-              <img src="/images/{post.images[0]}" alt="Post" class="h-80 w-72 object-cover rounded-t-xl" />
+              <img src="/images/{post.images[0]}" alt="Imagini indisponibile / Eroare" class="h-80 w-72 object-cover rounded-t-xl" />
               <div class="px-4 py-3 w-72">
                 <p class="text-lg font-bold text-black dark:text-white truncate block capitalize">{post.titlu}</p>
                 <span class="text-gray-500 dark:text-gray-300 mr-3 text-xs block" style="margin-top:0.1rem">Oras: {post.oras}</span>
