@@ -21,9 +21,9 @@
 
 
 	const path: string = '';
-  const description: string = 'Admin Dashboard example using Flowbite Svelte';
-  const title: string = 'Flowbite Svelte Admin Dashboard - Home';
-  const subtitle: string = 'Admin Dashboard';
+  const description: string = 'Adnex';
+  const title: string = 'Adnex';
+  const subtitle: string = 'Adnex';
 </script>
 
 <MetaTag {path} {description} {title} {subtitle} />

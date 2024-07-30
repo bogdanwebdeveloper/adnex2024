@@ -54,8 +54,7 @@
 			<h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Iată câteva anunțuri!</h2>
 	  
 			<p class="mx-auto mt-4 max-w-md text-gray-500">
-			  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
-			  dicta incidunt est ipsam, officia dolor fugit natus?
+			  Vezi apartamente, proprietăți si garsoniere. La noi găsești de toate, iar tu poți lua legătura cu proprietarul chiar pe pagina anunțului.
 			</p>
 		  </header>
 	  
