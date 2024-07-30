@@ -1,7 +1,7 @@
 {
 	"name": "adnex",
 	"version": "0.1.2",
-	"description": "Flowbite Admin Dashboard components for Svelte",
+	"description": "adnex advertisment website for real estate",
 	"main": "dist/index.js",
 	"homepage": "",
 	"private": false,
